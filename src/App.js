@@ -385,3 +385,5 @@ function WatchedMovie({ movie, onDeleteWatched }) {
     </li>
   );
 }
+
+
