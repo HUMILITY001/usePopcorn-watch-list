@@ -149,7 +149,6 @@ function Box({ children }) {
   );
 }
 
-
 function MovieList({ movies, onSelectMovie }) {
   return (
     <ul className="list list-movies">
@@ -207,10 +206,8 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
     Genre: genre,
   } = movie;
 
-
   const isTop = imdbRating > 8;
   console.log(isTop);
-
 
   function handleAdd() {
     const newWatchedMovie = {
@@ -226,8 +223,6 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
 
     onAddWatched(newWatchedMovie);
     onCloseMovie();
-
-
   }
 
   useKey("Escape", onCloseMovie);
@@ -283,8 +278,6 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
               </p>
             </div>
           </header>
-
-          
 
           <section>
             <div className="rating">
